@@ -1,0 +1,26 @@
+# path
+export PATH=$HOME/bin:$PATH
+
+# SCIM for typing non-english characters
+export XMODIFIERS=@im=SCIM
+export GTK_IM_MODULE=scim
+
+# Fondo de pantalla
+hsetroot -fill /root/Pictures/ragnarok.jpg &
+
+# SCIM support (for typing non-english characters)
+scim -d &
+
+# Panel
+tint2 &
+
+# Transparencias y efectos
+xcompmgr -cCfF -t-3 -l-5 -r5 -D4 &
+
+# conky
+conky &
+conky -c /etc/conky/conky2.conf &
+
+# Terminales 
+x-terminal-emulator &
+x-terminal-emulator &
